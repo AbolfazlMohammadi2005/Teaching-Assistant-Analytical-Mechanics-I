@@ -1,0 +1,57 @@
+% انتخاب کلاس سند
+\documentclass[12pt,a4paper]{article}
+
+% ---------- پکیج‌ها (همه قبل از xepersian) ----------
+\usepackage{fontspec}
+\usepackage{amsmath, amssymb, amstext}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+% ---------- تنظیم حاشیه ----------
+\geometry{margin=1in}
+
+% ---------- تنظیم fancyhdr ----------
+\pagestyle{fancy}
+\setlength{\headheight}{15pt} % حل خطای headheight
+
+\lhead{کوییز درس مکانیک تحلیلی}
+\chead{دانشکده فیزیک دانشگاه صنعتی خواجه نصیرالدین طوسی}
+\rhead{\today}
+
+% ---------- فارسی (باید آخر بیاید) ----------
+\usepackage{xepersian}
+\settextfont{B Nazanin}
+
+% ---------- شروع سند ----------
+\begin{document}
+	
+	\begin{tabular}{|p{7cm}|p{7cm}|}
+		\hline
+		\textbf{نام و نام خانوادگی:} & \textbf{شماره دانشجویی:} \\
+		\hline
+	\end{tabular}
+	
+	\section*{سوالات:}
+	
+	\begin{enumerate}
+		\item 
+		معادلات حرکت پرتابه را در میدان گرانشی یکنواخت و بدون مقاومت هوا بدست آورید
+		\item 
+			ذره ای در امتداد یک جوی چرخزاد صاف آزادانه حرکت میکند.سطح این چرخزاد در قالب این معادلات پارامتری بیان میشود
+			\\
+	\[
+	x=\frac{a}{4}\bigl(2\theta+\sin\theta\bigr)
+	\]
+	\[
+	y=\frac{a}{4}\bigl(1-\cos(2\theta)\bigr)
+	\]که در آن $\theta \in [0,\pi]$ و $a$ ثابت است.
+	لانگرانژی و معادلات حرکت ذره را بیابید.
+	
+	\end{enumerate}
+	
+	\vspace{10pt}
+	\textbf{موفق باشید.}
+	
+\end{document}

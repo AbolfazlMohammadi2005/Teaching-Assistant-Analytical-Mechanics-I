@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- پکیج‌ها (همه قبل از xepersian) ----------
+\usepackage{fontspec}
+\usepackage{amsmath, amssymb, amstext}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+% ---------- تنظیم حاشیه ----------
+\geometry{margin=1in}
+
+% ---------- تنظیم fancyhdr ----------
+\pagestyle{fancy}
+\setlength{\headheight}{15pt} % حل خطای headheight
+
+% هدرها
+\lhead{کوییز درس مکانیک‌تحلیلی}
+\chead{دانشکده فیزیک دانشگاه صنعتی خواجه نصیرالدین طوسی}
+\rhead{\today}
+
+% ---------- بسته فارسی و فونت ----------
+\usepackage{xepersian}
+\settextfont{B Nazanin}
+
+\begin{document}
+	
+	% جدول اطلاعات فردی
+	\begin{tabular}{|p{7cm}|p{7cm}|}
+		\hline
+		\textbf{نام و نام خانوادگی:} & \textbf{شماره دانشجویی:} \\
+		\hline
+	\end{tabular}
+	
+	% بخش سوالات
+	\section*{سوالات:}
+	\begin{enumerate}
+		\item 
+		رابطه بین مکان و زمان این متحرک به صورت زیر است:
+		\[
+		t = a x^3 - b x + c
+		\]
+		که در آن \(a\)، \(b\) و \(c\) مقادیر ثابتی هستند.
+		\begin{itemize}
+			\item الف) سرعت این متحرک را بدست آورید.
+			\item ب) شتاب این متحرک را بدست آورید.
+			\item ج) دیمانسیون هر یک از ثوابت \(a\)، \(b\) و \(c\) را بدست آورده و با دیمانسیون سرعت و شتاب مقایسه کنید.
+		\end{itemize}
+		
+		\vspace{0.8cm} % فاصله بین سوال 1 و 2
+		
+		% سوال ۲
+		\item 
+		یک دستگاه مختصات سه‌بعدی \((x, y, z)\) را در نظر بگیرید.
+		\begin{itemize}
+			\item الف) ماتریس دوران حول محور \(z\) به زاویه‌ی \(\theta\) را بنویسید و نشان دهید که این ماتریس یک ماتریس متعامد است.
+			\item ب) ماتریس کلی دوران حول محور \(y\) به زاویه‌ی \(\phi\) را بنویسید.
+			\item ج) ترکیب دو دوران متوالی را در نظر بگیرید: ابتدا دوران به اندازه‌ی \(\theta\) حول محور \(z\)، سپس دوران به اندازه‌ی \(\phi\) حول محور \(y\). ماتریس کلی این ترکیب را به‌دست آورید (به صورت حاصل‌ضرب دو ماتریس دوران).
+			\item د) نشان دهید که دترمینان ماتریس دوران کلی برابر با \(+1\) است.
+			\item هـ) بررسی کنید که آیا ترتیب دوران‌ها (اول حول \(z\) سپس حول \(y\)) با حالت معکوس آن یکی است یا نه.
+		\end{itemize}
+	\end{enumerate}
+	
+	\vspace{10pt}
+	\textbf{موفق باشید.}
+	
+\end{document}

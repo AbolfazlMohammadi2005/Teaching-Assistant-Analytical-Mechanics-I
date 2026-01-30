@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- پکیج‌ها (همه قبل از xepersian) ----------
+\usepackage{fontspec}
+\usepackage{amsmath, amssymb, amstext}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+% ---------- تنظیم حاشیه ----------
+\geometry{margin=1in}
+
+% ---------- تنظیم fancyhdr ----------
+\pagestyle{fancy}
+\setlength{\headheight}{15pt} % حل خطای headheight
+
+% هدرها
+\lhead{کوییز درس مکانیک‌تحلیلی}
+\chead{دانشکده فیزیک دانشگاه صنعتی خواجه نصیرالدین طوسی}
+\rhead{\today}
+
+% ---------- بسته فارسی و فونت ----------
+\usepackage{xepersian}
+\settextfont{B Nazanin}
+
+\begin{document}
+	
+	% جدول اطلاعات فردی
+	\begin{tabular}{|p{7cm}|p{7cm}|}
+		\hline
+		\textbf{نام و نام خانوادگی:} & \textbf{شماره دانشجویی:} \\
+		\hline
+	\end{tabular}
+	
+	% بخش سوالات
+	\section*{سوالات:}
+	
+	یک موشک تک‌مرحله‌ای با مشخصات زیر داریم:  
+	\begin{itemize}
+		\item جرم اولیه: \(M_0\)
+		\item جرم سوخت: \(M_f\)
+		\item پیشران ثابت: \(T\)
+		\item سرعت خروج گاز: \(u\)
+		\item شتاب گرانش: \(g\)
+		\item مقاومت هوا: \(F_{\text{\lr{drag}} = k v^2\)
+	\end{itemize}
+	
+	\begin{enumerate}
+		\item معادله حرکت موشک را بنویسید، شامل اثر وزن، پیشران و مقاومت هوا.
+		\item نشان دهید که بدون مقاومت هوا، تغییر سرعت (\(\Delta v\)) موشک به صورت زیر است:
+		\[
+		\Delta v = u \ln \frac{M_0}{M_0 - M_f}
+		\]
+		\item شرط برخاست موشک را بنویسید (حداقل \(T\) لازم برای بلند شدن از زمین).
+		\item اگر بخواهیم شتاب اولیه بیش از \(2g\) نشود، شرط مربوط به \(T\) را بنویسید.
+	\end{enumerate}
+	
+	\vspace{10pt}
+	\textbf{موفق باشید.}
+	
+\end{document}
