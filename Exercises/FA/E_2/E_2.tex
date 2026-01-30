@@ -1,0 +1,240 @@
+%---------------------------------------------------
+% کلاس سند: article برای اسناد متنی، با اندازه کاغذ A4 و فونت پایه 16
+\documentclass[a4paper,16pt]{article}
+
+% بسته‌های ریاضی برای معادلات و نمادهای پیشرفته
+\usepackage{amsmath, amssymb, amstext}
+
+% بسته رنگ برای استفاده از رنگ در متن یا محیط‌ها
+\usepackage{xcolor}
+
+% بسته گرافیک برای درج تصاویر
+\usepackage{graphicx}
+
+% تنظیمات حاشیه صفحه
+\usepackage{geometry}
+
+% بسته لینک‌دهی (هایپرلینک‌ها)
+\usepackage{hyperref}
+
+% بسته صفحه‌آرایی برای تنظیم هدر و فوتر
+\usepackage{fancyhdr}
+
+
+% بسته xepersian برای پشتیبانی از زبان فارسی با XeLaTeX
+\usepackage{xepersian}
+
+% تعیین فونت فارسی (فایل فونت باید موجود باشد یا در سیستم نصب باشد)
+\settextfont{B Nazanin}
+
+% تنظیم اندازه حاشیه‌ها از هر طرف برابر با 1 اینچ
+\geometry{margin=1in}
+
+% تنظیم سبک fancy برای سربرگ و پاورقی
+\pagestyle{fancy}
+
+% سمت چپ هدر: مشخص‌کننده سری تمرین و نام درس
+\lhead{تمرین سری دو درس مکانیک تحلیلی }
+
+% وسط هدر: نام دانشکده
+\chead{دانشکده فیزیک دانشگاه صنعتی خواجه نصیرالدین طوسی}
+
+% سمت راست هدر: تاریخ روز به‌صورت خودکار
+\rhead{\today}
+
+% پایین صفحه: شماره صفحه
+\cfoot{\thepage}
+
+% شروع سند
+\begin{document}
+	
+	% صفحه عنوان (بدون هدر و فوتر)
+	\thispagestyle{empty}
+	\begin{center}
+		% لوگوی دانشگاه (باید فایل تصویر در مسیر پروژه باشد)
+			\includegraphics[width=0.5\textwidth]{../../../images/image-E_1/image-1.png} \\[10pt]
+		
+		% عنوان سند
+		\textbf{\LARGE عنوان : تمرین سری دو}\\[20pt]
+		
+		% نیم‌سال تحصیلی
+		\textbf{\LARGE نیم‌سال تحصیلی : 4041}\\[10pt]
+		
+		% نام مدرس درس
+		\textbf{\Large مدرس : دکتر محمد انصاری فرد}\\[10pt]
+		
+		% مبحث تمرین 
+		\textbf{\Large مبحث تمرین : ماتریس‌ها، بردارها و حساب برداری }\\[10pt]
+		
+		% مهلت تحویل تمرین
+		\textbf{\Large مهلت تحویل : 5 آبان}
+	\end{center}
+	
+	% صفحه جدید برای ادامه سند
+	\newpage
+	
+	% ایجاد فهرست مطالب به‌صورت خودکار (براساس \section و \subsection و ...)
+	\tableofcontents
+	\newpage
+	
+	% شروع بخش سوالات - سوال اول
+	\section{سوال اول}
+	
+	فرض کنید سه بردار ثابت $\mathbf{a}, \mathbf{b}, \mathbf{c}$ از مبدأ (اصل مختصات) به نقاط $A, B, C$ کشیده شده‌اند.
+	
+	\begin{enumerate}
+		\item فاصله مبدأ تا صفحه‌ای که از نقاط $A, B, C$ می‌گذرد چقدر است؟
+		\item مساحت مثلث $ABC$ چقدر است؟
+	\end{enumerate}
+	
+	% اضافه کردن تصویر در صورت نیاز (در حال حاضر کامنت شده)
+	%\begin{figure}[h]
+	%    \centering
+	%    \includegraphics[width=0.5\textwidth]{FoxitPDFReader_nTeEJVaLnL.png}
+	%    \caption{}
+	%    \label{fig:square_particles}
+	%\end{figure}
+	
+	\section{سوال دوم}
+	
+	
+	نشان دهید که:
+	
+	\begin{enumerate}
+		\item $\nabla r^n = n\, r^{\,n-2} \,\vec{r}$
+		\item $\nabla^2 (\ln r) = \dfrac{1}{r^2}$
+	\end{enumerate}
+	
+	\textbf{توجه:} برای آشنایی با عملگر لاپلاسین و نحوه تعریف آن در دستگاه‌های مختصات مختلف، پیوست را مطالعه کنید.
+	
+	
+	\section{سوال سوم}
+	مؤلفه‌های بردار شتاب $\mathbf{a}$ را در مختصات استوانه پیدا کنید.
+	
+	\[
+	\mathbf{a} = a_r \,\hat{r} + a_\theta \,\hat{\theta} + a_z \,\hat{z}
+	\]
+	
+	\section{سوال چهارم}
+	
+	ماتریس تبدیل (تغییر مختصات) را پیدا کنید که یک دستگاه مختصات را به اندازه $120^\circ$ حول محوری بچرخاند که با محورهای $x$ و $y$ زاویه برابر و با محور $z$ زاویه $30^\circ$ می‌سازد.
+	
+	\section{سوال پنجم}
+	
+	
+	یک ذره با سرعت ثابت $v = {const}$ بر روی منحنی 
+	\[
+	r = k(1 + \cos \theta) \quad (\text{کاردیوئید})
+	\]
+	حرکت می‌کند.
+	
+	\begin{enumerate}
+		\item مؤلفه شتاب در راستای شعاعی: $\ddot{\mathbf{r}} \cdot \hat{\mathbf{e}}_r = \mathbf{a} \cdot \hat{\mathbf{e}}_r$
+		\item اندازه شتاب: $|\mathbf{a}|$
+		\item مشتق زاویه‌ای: $\dot{\theta}$
+	\end{enumerate}
+	را محاسبه کنید.
+	
+	\section{سؤال ششم}
+	
+	مقدار انتگرال سطحی زیر را پیدا کنید:
+	\[
+	\int_S \mathbf{A} \cdot d\mathbf{a}
+	\]
+	که:
+	\[
+	\mathbf{A} = (x^2 + y^2 + z^2)(x \hat{\mathbf{i}} + y \hat{\mathbf{j}} + z \hat{\mathbf{k}})
+	\]
+	و $S$ سطح بسته‌ای است که توسط کره
+	\[
+	x^2 + y^2 + z^2 = R^2
+	\]
+	تعریف شده است.
+	
+	\begin{enumerate}
+		\item انتگرال را به صورت مستقیم محاسبه کنید.
+		\item انتگرال را با استفاده از قضیه گاوس  محاسبه کنید:
+		\[
+		\int_S \mathbf{A} \cdot d\mathbf{a} = \int_V (\nabla \cdot \mathbf{A}) \, dV
+		\]
+	\end{enumerate}
+	\newpage
+	\section{سوال هفتم}
+	
+	با بسط مستقیم نشان دهید که:
+	\[
+	|\Lambda|^2 = 1
+	\]
+	برای سادگی، فرض کنید \(\Lambda\) یک ماتریس تبدیل متعامد دوبعدی است.
+	
+	\section{سوال امتیازی}
+	با استفاده از تعریف لاپلاسین به‌صورت:
+	\[
+	\nabla^2 f = \nabla \cdot (\nabla f)
+	\]
+	و روابط گرادیان و دیورژانس در مختصات استوانه‌ای، 
+	رابطه‌ی صریح لاپلاسین را در دستگاه مختصات استوانه‌ای \((r, \phi, z)\) به‌دست آورید.
+	\[
+	\nabla^2 f =
+	\frac{1}{r} \frac{\partial}{\partial r}
+	\left( r \frac{\partial f}{\partial r} \right)
+	+ \frac{1}{r^2} \frac{\partial^2 f}{\partial \theta^2}
+	+ \frac{\partial^2 f}{\partial z^2}
+	\]
+	
+	
+	
+	\newpage
+	\section{پیوست}
+	
+	\hrule\vspace{1em}
+	\subsection*{تعریف لاپلاسین در دستگاه‌های مختصات مختلف}
+	
+	
+	\[
+	\nabla^2 f = \nabla \cdot (\nabla f)
+	\]
+	
+	عملگر لاپلاسین برای یک تابع اسکالر $f$ در دستگاه‌های مختصات مختلف به‌صورت زیر تعریف می‌شود:
+	
+	
+	
+	\subsection*{۱. مختصات دکارتی $(x, y, z)$}
+	\[
+	\nabla^2 f =
+	\frac{\partial^2 f}{\partial x^2} +
+	\frac{\partial^2 f}{\partial y^2} +
+	\frac{\partial^2 f}{\partial z^2}
+	\]
+	
+	\subsection*{۲. مختصات استوانه‌ای $(r, \theta, z)$}
+	\[
+	\nabla^2 f =
+	\frac{1}{r} \frac{\partial}{\partial r}
+	\left( r \frac{\partial f}{\partial r} \right)
+	+ \frac{1}{r^2} \frac{\partial^2 f}{\partial \theta^2}
+	+ \frac{\partial^2 f}{\partial z^2}
+	\]
+	
+	\subsection*{۳. مختصات کروی $(r, \theta, \phi)$}
+	\[
+	\nabla^2 f =
+	\frac{1}{r^2} \frac{\partial}{\partial r}
+	\left( r^2 \frac{\partial f}{\partial r} \right)
+	+ \frac{1}{r^2 \sin\theta} \frac{\partial}{\partial \theta}
+	\left( \sin\theta \frac{\partial f}{\partial \theta} \right)
+	+ \frac{1}{r^2 \sin^2\theta}
+	\frac{\partial^2 f}{\partial \phi^2}
+	\]
+	
+
+
+
+
+
+
+\vspace{10pt}
+\textbf{موفق باشید.}
+	
+	% پایان سند
+\end{document}
